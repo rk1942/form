@@ -1,0 +1,56 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<form action="your_server_script.php" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" placeholder="Enter your username" required>
+  <br>
+
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <br>
+
+  <label>Languages:</label>
+  <input type="checkbox" id="english" name="language" value="english">
+  <label for="english">English</label>
+  <input type="checkbox" id="spanish" name="language" value="spanish">
+  <label for="spanish">Spanish</label>
+  <input type="checkbox" id="french" name="language" value="french">
+  <label for="french">French</label>
+  <br>
+
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+      <option value="usa">United States</option>
+      <option value="canada">Canada</option>
+      <option value="uk">United Kingdom</option>
+      <option value="australia">Australia</option>
+  </select>
+  <br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  <br>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+  <br>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
+
+
+
